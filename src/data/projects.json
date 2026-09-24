@@ -1,0 +1,15 @@
+{
+    "projects": [
+        {
+            "id":1,
+            "name":"Ziza Express",
+            "description":" a venir ",
+            "stacks":[
+                "CSS",
+                "JS",
+                "Node JS",
+                "PostgreSQL"
+            ]
+        }
+    ] 
+}

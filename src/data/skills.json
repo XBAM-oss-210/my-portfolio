@@ -1,0 +1,54 @@
+{
+    "Frontend": [
+        {
+            "name":"CSS",
+            "image":"/src/assets/images/css.jpg",
+            "level":"70 %"
+        },
+        {
+            "name":"Javascript",
+            "image":"/src/assets/images/js.jpg",
+            "level":"80 %"
+        },
+        {
+            "name":"React JS",
+            "image":"/src/assets/images/reactJS.jpg",
+            "level":"60 %"
+        }
+    ] ,
+    "Backend & Base de Donnees": [
+        {
+            "name":"Php",
+            "image":"/src/assets/images/php.jpg",
+            "level":"60 %"
+        },
+        {
+            "name":"Node JS",
+            "image":"/src/assets/images/nodejs.jpg",
+            "level":"75 %"
+        },
+        {
+            "name":"MySql/PostgreSQL",
+            "image":"/src/assets/images/database.jpg",
+            "level":"75 %"
+        }
+    ] , 
+    "Tools": [
+        {
+            "name":"Github",
+            "image":"/src/assets/images/github.jpg",
+            "level":"70 %"
+        },
+        {
+            "name":"Claude",
+            "image":"/src/assets/images/claude.jpg",
+            "level":"80 %"
+
+        },
+        {
+            "name":"Canva",
+            "image":"/src/assets/images/canva.jpg",
+            "level":"85 % "
+        }
+    ] 
+}
