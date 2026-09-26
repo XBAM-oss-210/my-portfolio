@@ -1,54 +1,67 @@
 {
     "Frontend": [
         {
-            "name":"CSS",
+            "name":"HTML/CSS",
             "image":"/src/assets/images/css.jpg",
-            "level":"70 %"
+            "level":"70",
+            "color":"#1572B6"
         },
         {
             "name":"Javascript",
             "image":"/src/assets/images/js.jpg",
-            "level":"80 %"
+            "level":"80",
+            "color":"#F7DF1E"
+
         },
         {
             "name":"React JS",
             "image":"/src/assets/images/reactJS.jpg",
-            "level":"60 %"
+            "level":"60",
+            "color":"#61DAFB"
+
         }
     ] ,
     "Backend & Base de Donnees": [
         {
             "name":"Php",
             "image":"/src/assets/images/php.jpg",
-            "level":"60 %"
+            "level":"60",
+            "color":"#777BB4"
+
         },
         {
             "name":"Node JS",
             "image":"/src/assets/images/nodejs.jpg",
-            "level":"75 %"
+            "level":"75",
+            "color":"#339933"
         },
         {
-            "name":"MySql/PostgreSQL",
+            "name":"MySQL/PostgreSQL",
             "image":"/src/assets/images/database.jpg",
-            "level":"75 %"
+            "level":"75",
+            "color":"#336791"
         }
     ] , 
     "Tools": [
         {
             "name":"Github",
             "image":"/src/assets/images/github.jpg",
-            "level":"70 %"
+            "level":"70",
+            "color":"#F0F6FC"
         },
         {
             "name":"Claude",
             "image":"/src/assets/images/claude.jpg",
-            "level":"80 %"
+            "level":"80",
+            "color":"#D97757"
 
         },
         {
             "name":"Canva",
             "image":"/src/assets/images/canva.jpg",
-            "level":"85 % "
+            "level":"85",
+            "color":"#00C4CC"
         }
     ] 
 }
+

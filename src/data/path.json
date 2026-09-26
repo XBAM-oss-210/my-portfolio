@@ -1,14 +1,12 @@
-    [
-    {
-        "date": "2025 — 2026",
-        "title": "🎓 Première année Électronique, Informatique & Télécommunications Universite Amadou Mactar Mbow ",
-        "text": "Découverte des fondamentaux de l'informatique, de la programmation et des technologies numériques."
-    },
-
-    {
-        "date": "2026 — Aujourd'hui",
-        "title": " Développement personnel",
-        "text": "Je développe progressivement mes compétences à travers  des projets personnels et l'exploration du développement web."
-    }
-
-    ]
+[
+{
+"date": "2025 — 2026",
+"title": "🎓 Première année — Électronique, Informatique & Télécommunications",
+"text": " Acquisition des fondamentaux en informatique et programmation, avec une initiation à AutoCAD à l’UAM."
+},
+{
+"date": "2026 — Aujourd'hui",
+"title": "Développement de solutions digitales",
+"text": "Je développe progressivement mes compétences à travers des projets personnels et l'exploration du développement web, en parallèle de ma formation à l'UAM."
+}
+]

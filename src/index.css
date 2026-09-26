@@ -1,2 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+
 @import "tailwindcss";
+    body {
+        @apply bg-[#030810] text-white;
+        font-family: 'Inter', sans-serif;
+
+    }
+
+    h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    }
+    @theme {
+    --font-inter: "Inter", sans-serif;
+    --font-montserrat: "Montserrat", sans-serif;
+    }
 
