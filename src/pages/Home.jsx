@@ -118,7 +118,7 @@ const Home = () => {
                     >
 
                         <img
-                            src="src/assets/images/LogoXBamCyber.png"
+                            src="/images/LogoXBamCyber.png"
                             alt="Logo XBAM Cyber"
                             className="h-6 w-6 rounded-full object-cover"
                         />

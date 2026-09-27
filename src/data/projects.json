@@ -4,7 +4,7 @@
             "id":1,
             "name":"Ziza Express",
             "description":"Application web de livraison à vélo conçue pour un service local sénégalais. Elle permet aux clients de demander des livraisons, des courses et divers services du quotidien,.",
-            "image":"/src/assets/projects/zizaExpress.png",
+            "image":"/projects/zizaExpress.png",
             "stacks":[
                 "Express",
                 "Node JS",

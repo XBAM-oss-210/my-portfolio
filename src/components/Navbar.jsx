@@ -77,7 +77,7 @@ const Navbar = () => {
                     >
 
                         <img
-                            src="src/assets/images/LogoXBamCyber.png"
+                            src="/images/LogoXBamCyber.png"
                             alt="Logo XBAM Cyber"
                             className="w-16 rounded-3xl"
                         />
