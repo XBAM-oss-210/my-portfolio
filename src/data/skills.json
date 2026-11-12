@@ -1,5 +1,5 @@
 {
-    "Frontend": [
+    "Front-end": [
         {
             "name":"HTML/CSS",
             "image":"/images/css.jpg",
@@ -18,7 +18,12 @@
             "image":"/images/reactJS.jpg",
             "level":"60",
             "color":"#61DAFB"
-
+        },
+        {
+            "name":".TypeScript",
+            "image":"/images/typescript.jpg",
+            "level":"60",
+            "color":"#3178C6"
         }
     ] ,
     "Backend & Base de Donnees": [
@@ -36,7 +41,7 @@
             "color":"#339933"
         },
         {
-            "name":"MySQL/PostgreSQL",
+            "name":"PostgreSQL",
             "image":"/images/database.jpg",
             "level":"75",
             "color":"#336791"

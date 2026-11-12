@@ -1,60 +1,227 @@
+
 import data from "../data/projects.json";
 
-const Project =()=>{
+const Project = () => {
+
     return (
-        <>
-<section>
-    <div className="flex flex-col justify-center items-center w-[90%] max-w-5xl mt-15 mx-auto p-4 md:p-6 border border-white/10 rounded-xl leading-relaxed">
+        <main className="
+            min-h-screen
+            bg-[#0A0E13]
+            px-6
+            py-16
+            sm:px-10
+            lg:px-20
+            text-slate-200
+            antialiased
+        ">
 
-        <h1
-            className="text-2xl font-bold text-blue-600 text-center md:text-4xl md:my-2"
-        >
-            <span className="text-white">/</span> MES REALISATIONS
-        </h1>
+            {/* INTRODUCTION */}
 
-        <p className="text-center italic text-sm text-[#94A3B8] max-w-2xl md:text-base">
-            Un aperçu de mes projets, entre réalisations concrètes, expérimentations et projets personnels.
-        </p>
-    </div>
+            <section className="
+                mx-auto
+                my-10
+                flex
+                w-full
+                max-w-5xl
+                flex-col
+                items-center
+                justify-center
+                rounded-2xl
+                border
+                border-white/10
+                bg-[#101820]
+                p-6
+                text-center
+                sm:p-8
+            ">
 
-    <div className="m-5 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:gap-6">
-        {data.projects.map((project) => (
-            <div
-                key={project.id}
-                className="w-full overflow-hidden border border-white/20 rounded-xl bg-white/2 transition-all duration-300 hover:-translate-y-1 hover:bg-blue-400/10 hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-500/10"
-            >
-                <img
-                    src={project.image}
-                    alt=""
-                    className="w-full h-40 object-cover"
-                />
+                <span className="
+                    mb-4
+                    rounded-full
+                    border
+                    border-[#00D9FF]/30
+                    bg-[#00D9FF]/10
+                    px-4
+                    py-1.5
+                    font-mono
+                    text-xs
+                    tracking-wide
+                    text-[#00D9FF]
+                ">
+                    XBAM CYBER / PROJECTS
+                </span>
 
-                <div>
-                    <h3 className="font-bold my-3 ml-3 font-montserrat text-white text-lg">
-                        {project.name}
-                    </h3>
+                <h1 className="
+                    my-2
+                    font-mono
+                    text-2xl
+                    font-bold
+                    text-white
+                    sm:text-3xl
+                    md:text-4xl
+                ">
+                    <span className="text-[#00D9FF]">/</span> MES RÉALISATIONS
+                </h1>
 
-                    <p className="font-inter m-3 text-sm leading-relaxed text-[#94A3B8] wrap-break-words">
-                        {project.description}
-                    </p>
-                </div>
-
-                <p className="grid grid-cols-2 gap-1 p-2">
-                    {project.stacks.map((stack) => (
-                        <span
-                            key={stack}
-                            className="border border-blue-700/60 rounded-lg text-blue-400 text-xs text-center  font-bold  m-1 p-1"
-                        >
-                            {stack}
-                        </span>
-                    ))}
+                <p className="
+                    mt-2
+                    max-w-2xl
+                    text-sm
+                    italic
+                    leading-relaxed
+                    text-[#94A3B8]
+                    sm:text-base
+                ">
+                    Un aperçu de mes projets, entre réalisations concrètes,
+                    expérimentations et projets personnels.
                 </p>
-            </div>
-        ))}
-    </div>
-</section>
 
-        </>
-    )
-}
-export default Project 
+            </section>
+
+
+            {/* CARTES DES PROJETS */}
+
+            <section className="
+                mx-auto
+                grid
+                w-full
+                max-w-6xl
+                grid-cols-1
+                gap-6
+                sm:grid-cols-2
+                lg:grid-cols-3
+            ">
+
+                {data.projects.map((project) => (
+
+                    <article
+                        key={project.id}
+                        className="
+                            group
+                            flex
+                            flex-col
+                            overflow-hidden
+                            rounded-2xl
+                            border
+                            border-white/10
+                            bg-[#101820]
+                            transition-all
+                            duration-300
+                            hover:-translate-y-1
+                            hover:border-[#00D9FF]/50
+                            hover:bg-[#00D9FF]/5
+                            hover:shadow-[0_0_25px_rgba(0,217,255,0.08)]
+                        "
+                    >
+
+                        {/* IMAGE */}
+
+                        <div className="
+                            relative
+                            h-44
+                            overflow-hidden
+                            bg-[#0A0E13]
+                        ">
+
+                            <img
+                                src={project.image}
+                                alt={project.name}
+                                loading="lazy"
+                                className="
+                                    h-full
+                                    w-full
+                                    object-cover
+                                    transition-transform
+                                    duration-500
+                                    group-hover:scale-105
+                                "
+                            />
+
+                            <div className="
+                                pointer-events-none
+                                absolute
+                                inset-0
+                                bg-linear-to-t
+                                from-[#0A0E13]/40
+                                to-transparent
+                            "/>
+
+                        </div>
+
+
+                        {/* CONTENU */}
+
+                        <div className="
+                            flex
+                            flex-1
+                            flex-col
+                            p-5
+                        ">
+
+                            <h3 className="
+                                mb-3
+                                font-mono
+                                text-lg
+                                font-semibold
+                                text-white
+                                transition-colors
+                                duration-300
+                                group-hover:text-[#00D9FF]
+                            ">
+                                {project.name}
+                            </h3>
+
+                            <p className="
+                                mb-5
+                                flex-1
+                                wrap-break-word
+                                text-sm
+                                leading-relaxed
+                                text-[#94A3B8]
+                            ">
+                                {project.description}
+                            </p>
+
+
+                            {/* TECHNOLOGIES */}
+
+                            <div className="
+                                flex
+                                flex-wrap
+                                gap-2
+                                border-t
+                                border-white/10
+                                pt-4
+                            ">
+
+                                {project.stacks.map((stack) => (
+
+                                    <span className="
+                                        rounded-lg border border-[#3178C6]/50
+                                        bg-[#3178C6]/10 px-3 py-1
+                                        text-xs font-semibold text-[#3178C6]
+                                        font-mono
+                                        "
+                                        translate="no"
+
+                                        >
+                                        {stack}
+                                        </span>
+
+                                ))}
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                ))}
+
+            </section>
+
+        </main>
+    );
+};
+
+export default Project;

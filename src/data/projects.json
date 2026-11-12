@@ -11,6 +11,20 @@
                 "PostgreSQL",
                 "Css "
             ]
+
+        },
+        {
+            "id":2,
+            "name":"Teranga Gourmande",
+            "description": "PWA dédiée à la découverte des plats sénégalais, avec leurs ingrédients, étapes de préparation et vidéos explicatives.",
+            "image":"/projects/terangaGourmande.png",
+            "stacks":[
+                "Neon",
+                "react Js", 
+                "node js",
+                "Typescript"
+            ]
+
         }
     ] 
 }

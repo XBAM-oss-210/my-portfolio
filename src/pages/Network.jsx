@@ -1,3 +1,4 @@
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
@@ -6,210 +7,234 @@ import {
     faTiktok
 } from "@fortawesome/free-brands-svg-icons";
 
-
 const Network = () => {
 
-    const grid =
-        "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 w-full";
-
-    const flex =
-        "flex flex-col justify-center items-center";
-
-    const aStyle = `
-        flex
-        flex-col
-        items-center
-        justify-center
-        gap-3
-
-        w-full
-        p-6
-
-        border
-        border-white/10
-
-        rounded-xl
-
-        bg-white/5
-
-        text-white
-
-        transition
-        duration-300
-
-        hover:border-[#00D9FF]
-        hover:bg-[#00D9FF]/10
-        hover:text-[#00D9FF]
-
-        hover:-translate-y-1
-    `;
-
+    const networks = [
+        {
+            icon: faGithub,
+            name: "GitHub",
+            description: "Découvrez mes projets et mon code",
+            href: "#"
+        },
+        {
+            icon: faLinkedin,
+            name: "LinkedIn",
+            description: "Retrouvez mon parcours professionnel",
+            href: "#"
+        },
+        {
+            icon: faTiktok,
+            name: "TikTok",
+            description: "Découvrez mon contenu",
+            href: "#"
+        }
+    ];
 
     return (
-        <main className="min-h-screen px-4 py-10 sm:px-6 lg:px-10">
+        <main className="
+            min-h-screen
+            bg-[#0A0E13]
+            px-6
+            py-16
+            sm:px-10
+            lg:px-20
+            text-slate-200
+            antialiased
+        ">
 
-            {/* =========================
-                INTRODUCTION
-            ========================= */}
+            {/* INTRODUCTION */}
 
-            <section
-                className={`
-                    ${flex}
+            <section className="
+                flex
+                flex-col
+                items-center
+                justify-center
+                mx-auto
+                my-10
+                max-w-2xl
+                text-center
+            ">
 
-                    text-center
+                <div className="
+                    relative
+                    mb-6
+                    rounded-full
+                    p-1
+                    border
+                    border-[#00D9FF]/30
+                    shadow-[0_0_25px_rgba(0,217,255,0.12)]
+                ">
+                    <img
+                        src="/images/LogoXBamCyber.png"
+                        alt="Logo XBAM Cyber"
+                        className="
+                            h-16
+                            w-16
+                            rounded-full
+                            object-cover
+                            sm:h-20
+                            sm:w-20
+                        "
+                    />
+                </div>
 
-                    max-w-2xl
-                    mx-auto
+                <span className="
+                    mb-4
+                    rounded-full
+                    border
+                    border-[#00D9FF]/30
+                    bg-[#00D9FF]/10
+                    px-4
+                    py-1.5
+                    font-mono
+                    text-xs
+                    tracking-wide
+                    text-[#00D9FF]
+                ">
+                    XBAM CYBER / NETWORK
+                </span>
 
-                    my-10
-                `}
-            >
-
-                <img
-                    src="/images/LogoXBamCyber.png"
-                    alt="Logo XBAM Cyber"
-                    className="
-                        w-16
-                        h-16
-
-                        sm:w-20
-                        sm:h-20
-
-                        object-cover
-                        rounded-full
-
-                        mb-4
-                    "
-                />
-
-
-                <h1
-                    className="
-                        text-2xl
-                        sm:text-3xl
-                        lg:text-4xl
-
-                        font-bold
-
-                        text-white
-
-                        mb-3
-                    "
-                >
+                <h1 className="
+                    mb-4
+                    font-mono
+                    text-2xl
+                    font-semibold
+                    text-white
+                    sm:text-3xl
+                    lg:text-4xl
+                ">
                     Développeur Web FullStack
                 </h1>
 
-
-                <p
-                    className="
-                        italic
-
-                        text-sm
-                        sm:text-base
-
-                        text-gray-400
-
-                        leading-relaxed
-                    "
-                >
-                    Conception de solutions adaptées à vos besoins
+                <p className="
+                    max-w-lg
+                    text-sm
+                    leading-relaxed
+                    text-[#94A3B8]
+                    sm:text-base
+                ">
+                    Conception de solutions adaptées à vos besoins.
+                    Retrouvez-moi sur mes différentes plateformes.
                 </p>
 
             </section>
 
 
-            {/* =========================
-                RÉSEAUX
-            ========================= */}
+            {/* RÉSEAUX SOCIAUX */}
 
-            <section
-                className={`
-                    ${grid}
+            <section className="
+                mx-auto
+                grid
+                w-full
+                max-w-5xl
+                grid-cols-1
+                gap-5
+                sm:grid-cols-2
+                sm:gap-6
+                lg:grid-cols-3
+            ">
 
-                    max-w-5xl
-                    mx-auto
-                `}
-            >
+                {networks.map(({ icon, name, description, href }) => (
 
-                {/* GitHub */}
+                    <a
+                        key={name}
+                        href={href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`Visiter mon profil ${name}`}
+                        className="
+                            group
+                            flex
+                            w-full
+                            flex-col
+                            items-center
+                            justify-center
+                            gap-4
+                            rounded-2xl
+                            border
+                            border-white/10
+                            bg-[#101820]
+                            p-7
+                            text-white
+                            transition-all
+                            duration-300
+                            hover:-translate-y-1
+                            hover:border-[#00D9FF]/50
+                            hover:bg-[#00D9FF]/5
+                            hover:shadow-[0_0_25px_rgba(0,217,255,0.08)]
+                        "
+                    >
 
-                <a
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={aStyle}
-                >
+                        <div className="
+                            flex
+                            h-14
+                            w-14
+                            items-center
+                            justify-center
+                            rounded-xl
+                            border
+                            border-white/10
+                            bg-white/5
+                            transition-all
+                            duration-300
+                            group-hover:border-[#00D9FF]/30
+                            group-hover:bg-[#00D9FF]/10
+                        ">
 
-                    <FontAwesomeIcon
-                        icon={faGithub}
-                        className="text-4xl"
-                    />
+                            <FontAwesomeIcon
+                                icon={icon}
+                                className="
+                                    text-3xl
+                                    text-slate-300
+                                    transition-colors
+                                    duration-300
+                                    group-hover:text-[#00D9FF]
+                                "
+                            />
 
-                    <span className="font-semibold">
-                        GitHub
-                    </span>
+                        </div>
 
-                    <span className="text-sm text-gray-400 text-center">
-                        Découvrez mes projets et mon code
-                    </span>
+                        <span className="
+                            font-mono
+                            text-lg
+                            font-semibold
+                            transition-colors
+                            duration-300
+                            group-hover:text-[#00D9FF]
+                        ">
+                            {name}
+                        </span>
 
-                </a>
+                        <span className="
+                            text-center
+                            text-sm
+                            leading-relaxed
+                            text-[#94A3B8]
+                        ">
+                            {description}
+                        </span>
 
+                        <span className="
+                            mt-2
+                            font-mono
+                            text-xs
+                            text-[#00D9FF]/70
+                            transition-colors
+                            group-hover:text-[#00D9FF]
+                        "
+                        translate="no"
+                        >
+                            EXPLORER →
+                        </span>
 
-                {/* LinkedIn */}
+                    </a>
 
-                <a
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={aStyle}
-                >
-
-                    <FontAwesomeIcon
-                        icon={faLinkedin}
-                        className="text-4xl"
-                    />
-
-                    <span className="font-semibold">
-                        LinkedIn
-                    </span>
-
-                    <span className="text-sm text-gray-400 text-center">
-                        Retrouvez mon parcours professionnel
-                    </span>
-
-                </a>
-
-
-                {/* TikTok */}
-
-                <a
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={aStyle}
-                >
-
-                    <FontAwesomeIcon
-                        icon={faTiktok}
-                        className="text-4xl"
-                    />
-
-                    <span className="font-semibold">
-                        TikTok
-                    </span>
-
-                    <span className="text-sm text-gray-400 text-center">
-                        Découvrez mon contenu
-                    </span>
-
-                </a>
+                ))}
 
             </section>
 
         </main>
     );
 };
-
 
 export default Network;
